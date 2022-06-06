@@ -1,39 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/fullpage.css">
-    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script defer src="js/index.js"></script>
-    <script defer src="js/fullpage.js"></script>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="slider-container">
-        <div class="slider-verctial">
-            <div class="slide2" style="background-image: url(img/slide4.jpg);"></div>
-            <div class="slider-row">
-                <div class="slide" style="background-image: url(img/slide1.jpg);"></div>
-                <div class="slide" style="background-image: url(img/slide2.jpg);"></div>
-                <div class="slide" style="background-image: url(img/slide3.jpg);"></div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.8/fullpage.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.8/fullpage.js"></script>
+    <script defer src="js/index.js"></script>
+
+    <title>Lab6</title>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><span data-section="SUV">Внедорожник</span></li>
+            <li>
+                <div class="dropdown">
+                    <div class="sport">Спортивные автомобили</div>
+                    <div class="dropdown-content">
+                        <a href="#sport/sport1">Lamborghini</a>
+                        <a href="#sport/sport2">Bugatti</a>
+                        <a href="#sport/sport3">Porsche</a>
+                    </div>
+                </div>
+            </li>
+            <li><span data-section="electric_car">Электромобили</span></li>
+        </ul>
+    </div>
+    <div class="fullpage">
+        <div data-index="0" data-anchor="SUV" class="section">
+            <div class="car" style="background-image: url(img/slide1.jpg)"></div>
+            <div class="content">
+                <h2 class="title">Внедорожник</h2>
+                <p class="text">Внедорожник — автомобиль, обладающий повышенной проходимостью по бездорожью за счёт
+                    высокого клиренса, ведущих передних и задних колёс.</p>
             </div>
         </div>
-        <a class="arrow left">Left</a>
-        <a class="arrow right">Right</a>
-        <div class="dots">
-            <div class="dot" data-slide="1"></div>
-            <div class="dot" data-slide="2"></div>
-            <div class="dot" data-slide="3"></div>
+        <div data-index="1" class="section" data-anchor="sport" id="section2">
+            <div class="slide" data-anchor="sport1">
+                <div class="car" style="background-image: url(img/slide2.jpg)"></div>
+                <div class="content">
+                    <h2 class="title">Спорткар</h2>
+                    <p class="text">Спортивный автомобиль или спорткар (от англ. sports car) — условно-обобщённое
+                        наименование широкого класса двух-, редко четырёхместных легковых автомобилей, имеющих более
+                        высокие скоростные качества и соответственно повышенную мощность мотора (удельную мощность,
+                        моторизацию) и низкую посадку кузова (дорожный просвет, клиренс). В отличие от гоночных
+                        автомобилей, спортивные автомобили предназначены для езды по дорогам общего пользования (а
+                        значит, проходят государственную регистрацию, должны иметь полный комплект световых приборов и
+                        номерные знаки).</p>
+                </div>
+            </div>
+            <div class="slide" data-anchor="sport2">
+                <div class="car" id="car2" style="background-image: url(img/slide3.jpg)"></div>
+                <div class="content">
+                    <h2 class="title">Спорткар</h2>
+                    <p class="text">Спортивный автомобиль или спорткар (от англ. sports car) — условно-обобщённое
+                        наименование широкого класса двух-, редко четырёхместных легковых автомобилей, имеющих более
+                        высокие скоростные качества и соответственно повышенную мощность мотора (удельную мощность,
+                        моторизацию) и низкую посадку кузова (дорожный просвет, клиренс). В отличие от гоночных
+                        автомобилей, спортивные автомобили предназначены для езды по дорогам общего пользования (а
+                        значит, проходят государственную регистрацию, должны иметь полный комплект световых приборов и
+                        номерные знаки).</p>
+                </div>
+            </div>
+            <div class="slide" data-anchor="sport3">
+                <div class="car" id="car3" style="background-image: url(img/slide4.jpg) "></div>
+                <div class="content">
+                    <h2 class="title">Спорткар</h2>
+                    <p class="text">Спортивный автомобиль или спорткар (от англ. sports car) — условно-обобщённое
+                        наименование широкого класса двух-, редко четырёхместных легковых автомобилей, имеющих более
+                        высокие скоростные качества и соответственно повышенную мощность мотора (удельную мощность,
+                        моторизацию) и низкую посадку кузова (дорожный просвет, клиренс). В отличие от гоночных
+                        автомобилей, спортивные автомобили предназначены для езды по дорогам общего пользования (а
+                        значит, проходят государственную регистрацию, должны иметь полный комплект световых приборов и
+                        номерные знаки).</p>
+                </div>
+            </div>
         </div>
-        <div class="dots-vectical">
-            <div class="dotv" data-slide="1"></div>
-            <div class="dotv" data-slide="2"></div>
-            <div class="dotv" data-slide="3"></div>
+        <div data-index="2" data-anchor="electric_car" class="section">
+            <div class="car" style="background-image: url(img/slide5.jpg)"></div>
+            <div class="content">
+                <h2 class="title">Электромобиль</h2>
+                <p class="text">Электромобиль — автомобиль, приводимый в движение одним или несколькими
+                    электродвигателями с питанием от независимого источника электроэнергии (аккумуляторов, топливных
+                    элементов, конденсаторов и т. п.), а не двигателем внутреннего сгорания. Электромобиль следует
+                    отличать от автомобилей с двигателем внутреннего сгорания и электрической передачей, а также от
+                    троллейбусов и трамваев.</p>
+            </div>
         </div>
     </div>
-   
 
 </body>
+
 </html>
